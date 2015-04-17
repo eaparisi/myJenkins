@@ -1,0 +1,18 @@
+
+// To build MySQL image
+
+	docker build -t eparisi/jenkins --force-rm=true .
+	
+// To start Jenkins
+
+	docker run 
+		--name YesWeAdTestJenkins 
+		-v /home/eric/JenkinsData:/var/jenkins_home
+		-p 1180:8080 
+		-d 
+		eparisi/jenkins
+
+	docker run --name YesWeAdTestJenkins -v /home/eric/JenkinsData:/var/jenkins_home -p 1180:8080 -d eparisi/jenkins
+
+// Domain
+// yesweadtestjenkins.com.ar
