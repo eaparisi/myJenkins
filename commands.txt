@@ -13,6 +13,11 @@
 		eparisi/jenkins
 
 	docker run --name YesWeAdTestJenkins -v /home/eric/JenkinsData:/var/jenkins_home -p 1180:8080 -d eparisi/jenkins
+	docker run --name YesWeAdTestJenkins -v /home/ubuntu/JenkinsData:/var/jenkins_home -p 8080:8080 -d eparisi/jenkins
+
+	docker run --name YesWeAdTestJenkins -v /home/eric/JenkinsData:/var/jenkins_home -p 1180:8080 -d jenkins
+	docker run --name YesWeAdTestJenkins -v /c/Users/Esteban/JenkinsData:/var/jenkins_home -p 8080:8080 -d jenkins
+	docker run --name YesWeAdTestJenkins -v /home/ubuntu/JenkinsData:/var/jenkins_home -p 8080:8080 -d jenkins
 
 // Domain
 // yesweadtestjenkins.com.ar
